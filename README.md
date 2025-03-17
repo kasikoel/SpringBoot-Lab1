@@ -1,0 +1,59 @@
+## Schedule Builder
+
+## Description
+Schedule Builder is a backend application designed to help students plan their course schedules efficiently. It provides a RESTful API that allows users to manage courses and optimize their schedules based on constraints and preferences. Currently, the project only includes a backend, with no frontend interface.
+
+## Setup & Run Instructions
+
+### Prerequisites
+Before running the project, ensure you have the following installed:
+- **Java 17+**
+- **PostgreSQL** (Ensure a database named `schedule_db` is created)
+- **Maven**
+- **Git**
+
+### Downloading the Project
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/schedule-builder.git
+   cd schedule-builder
+   ```
+
+### Configuring the Database
+1. Open `src/main/resources/application.properties`.
+2. Update it with your PostgreSQL credentials:
+   ```properties
+   spring.datasource.url=jdbc:postgresql://localhost:5432/schedule_db
+   spring.datasource.username=your_username
+   spring.datasource.password=your_password
+   ```
+
+### Running the Project
+1. Open a terminal in the project folder.
+2. Build and run the application:
+   ```sh
+   mvn spring-boot:run
+   ```
+3. The project will be accessible at `http://localhost:8080`.
+
+### Testing the API
+Use Postman or a browser to test the following endpoints:
+- **Get all courses:** `GET http://localhost:8080/courses`
+- **Add a course:** `POST http://localhost:8080/courses` (JSON body: `{ "name": "Course Name", "creditHours": 3 }`)
+
+## Troubleshooting
+- Ensure PostgreSQL is running and properly configured.
+- If dependencies fail, run:
+  ```sh
+  mvn clean install
+  ```
+- **Whitelabel Error Page Issue:** Since there is no frontend, accessing the base URL (`http://localhost:8080`) in a browser will show the following error:
+  ```
+  Whitelabel Error Page
+  This application has no explicit mapping for /error, so you are seeing this as a fallback.
+  ```
+  To avoid this, ensure you are accessing the correct API endpoints like `http://localhost:8080/courses`.
+
+## Additional Notes
+This guide is for users who want to quickly set up and run the project without modifications.
+
