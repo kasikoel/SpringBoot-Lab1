@@ -1,7 +1,7 @@
 # Schedule Builder
 
 ## Description
-Schedule Builder is a backend application designed to help students plan their course schedules efficiently. It provides a RESTful API that allows users to manage courses and optimize their schedules based on constraints and preferences. Currently, the project only includes a backend, with no frontend interface.
+Schedule Builder is an application designed to help students plan their course schedules efficiently. It provides a RESTful API that allows users to manage courses and optimize their schedules based on constraints and preferences. Currently, the project only includes a backend, with no frontend interface.
 
 ## Setup & Run Instructions
 
@@ -54,5 +54,5 @@ Use Postman or a browser to test the following endpoints:
   
 
 ## Additional Notes
-This guide is for users who want to quickly set up and run the project without modifications.
+This guide is for users who want to quickly set up and run the project without modifications. This should be simple to configure and run as it is only the backend of the appilcation. I assure you the frontend will be implemented in the next lab with more complete features for user satisfaction.
 
