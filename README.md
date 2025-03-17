@@ -39,7 +39,6 @@ Before running the project, ensure you have the following installed:
 ### Testing the API
 Use Postman or a browser to test the following endpoints:
 - **Get all courses:** `GET http://localhost:8080/courses`
-- **Add a course:** `POST http://localhost:8080/courses` (JSON body: `{ "name": "Course Name", "creditHours": 3 }`)
 
 ## Troubleshooting
 - Ensure PostgreSQL is running and properly configured.
@@ -52,7 +51,7 @@ Use Postman or a browser to test the following endpoints:
   Whitelabel Error Page
   This application has no explicit mapping for /error, so you are seeing this as a fallback.
   ```
-  To avoid this, ensure you are accessing the correct API endpoints like `http://localhost:8080/courses`.
+  
 
 ## Additional Notes
 This guide is for users who want to quickly set up and run the project without modifications.
