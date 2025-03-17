@@ -1,4 +1,4 @@
-## Schedule Builder
+# Schedule Builder
 
 ## Description
 Schedule Builder is a backend application designed to help students plan their course schedules efficiently. It provides a RESTful API that allows users to manage courses and optimize their schedules based on constraints and preferences. Currently, the project only includes a backend, with no frontend interface.
@@ -11,6 +11,7 @@ Before running the project, ensure you have the following installed:
 - **PostgreSQL** (Ensure a database named `schedule_db` is created)
 - **Maven**
 - **Git**
+- **IntelliJ IDEA** (Recommended for running the project)
 
 ### Downloading the Project
 1. Clone the repository:
@@ -28,13 +29,12 @@ Before running the project, ensure you have the following installed:
    spring.datasource.password=your_password
    ```
 
-### Running the Project
-1. Open a terminal in the project folder.
-2. Build and run the application:
-   ```sh
-   mvn spring-boot:run
-   ```
-3. The project will be accessible at `http://localhost:8080`.
+### Running the Project in IntelliJ
+1. Open IntelliJ IDEA and load the project.
+2. Ensure Maven dependencies are loaded (`pom.xml` should be recognized automatically).
+3. Navigate to the `SchedulerApplication.java` file.
+4. Click the **Run** button or use `Shift + F10` to start the application.
+5. The project will be accessible at `http://localhost:8080`.
 
 ### Testing the API
 Use Postman or a browser to test the following endpoints:
